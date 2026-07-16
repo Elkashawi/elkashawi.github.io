@@ -1,7 +1,7 @@
 ---
 title: Web Cache Deception Testing
 date: 2026-07-16
-categories: [Web Security, Bug Bounty]
+categories: [Web Security, Vulnerabilities]
 tags:
   [
     Web-Cache-Deception,
@@ -10,7 +10,7 @@ tags:
     Cloudflare,
     Akamai,
     Varnish,
-    Bug-Bounty,
+    Vulnerabilities,
   ]
 ---
 

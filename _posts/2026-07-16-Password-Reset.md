@@ -1,7 +1,7 @@
 ---
 title: Password Reset Vulnerability Testing
 date: 2026-07-16
-categories: [Web Security, Bug Bounty]
+categories: [Web Security, Vulnerabilities]
 tags:
   [
     Password-Reset,
@@ -10,6 +10,7 @@ tags:
     IDOR,
     Race-Condition,
     Web-Security,
+    Vulnerabilities,
   ]
 ---
 
