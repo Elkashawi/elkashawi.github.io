@@ -1,7 +1,7 @@
 ---
 title: HTB Connected Writeup
 date: 2026-07-16
-categories: [HTB]
+categories: [HackTheBox]
 tags:
   [
     Linux,

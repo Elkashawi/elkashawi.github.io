@@ -1,7 +1,7 @@
 ---
 title: Web Cache Deception Testing
-date: 2026-07-16
-categories: [Web Security, Vulnerabilities]
+date: 2026-08-09
+categories: [Vulnerabilities]
 tags:
   [
     Web-Cache-Deception,

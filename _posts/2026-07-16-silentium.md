@@ -1,7 +1,7 @@
 ---
 title: HTB Silentium Writeup
-date: 2026-07-16
-categories: [HTB]
+date: 2026-07-25
+categories: [HackTheBox]
 tags: [Linux, Flowise, MCP, RCE, Gogs, Symlink, Privilege-Escalation]
 ---
 
