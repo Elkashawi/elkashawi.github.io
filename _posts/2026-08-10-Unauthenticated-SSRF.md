@@ -86,3 +86,5 @@ A few things stacked up to make this more than just a textbook SSRF:
 - It disclosed the actual response body, not just a timing or error-based signal. That's the difference between "SSRF exists" and "SSRF that hands you data."
 - The parameter names in the request, `gatewayHost`, `accessId`, `k8sAuthConfigName`, `secretPath`, and a stack trace referencing an Akeyless-style client, made it pretty clear this endpoint's whole job was talking to a secrets-management gateway. If that internal secrets service was reachable the same way `[REDACTED]`-style internal peers were, secret material could potentially flow back through the exact same response channel.
 - Edge protections didn't save it. Loopback requests still went through, so whatever WAF or edge rules were in front of this didn't actually validate the destination server-side.
+
+![alt text](/assets/images/SSRF.png)
