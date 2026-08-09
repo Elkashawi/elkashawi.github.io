@@ -35,7 +35,7 @@ HTTP response code: 405
 HTTP response body: <!doctype html><html lang="en">...<h1>Example Domain</h1>...
 ```
 
-![alt text](/assets/Images/First.png)
+![alt text](/assets/images/First.png)
 
 That HTML block is literally the body of example.com, fetched server-side and reflected straight back into the error message. At that point I knew I had SSRF with response disclosure, not just blind SSRF. That distinction matters a lot for impact.
 
@@ -55,7 +55,7 @@ The response came back as:
 java.net.ConnectException: Failed to connect to /127.0.0.1:9090
 ```
 
-![alt text](/assets/Images/Second.png)
+![alt text](/assets/images/Second.png)
 
 That's a meaningful result. A connection refused or reset like that tells you the server actually attempted a TCP connection, it's not a WAF or firewall silently swallowing the request. I repeated this across a handful of common service ports, 3306, 5432, 6379, 8000, 8080, 8200, 8443, 9090, 9200, and got consistent behavior across all of them. That's a solid internal port-scanning primitive, entirely unauthenticated, running through the target's own server.
 
@@ -74,7 +74,7 @@ Content type "text/html; charset=utf-8" is not supported ...
 HTTP response code: 200
 ```
 
-![alt text](/assets/Images/Third.png)
+![alt text](/assets/images/Third.png)
 
 Along with the full HTML page of that internal service, reflected right back into my response. This confirmed the whole thing end to end: not just "the server can reach internal hosts," but "I can actually read what's on them," through a completely unauthenticated public endpoint.
 
