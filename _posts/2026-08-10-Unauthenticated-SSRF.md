@@ -1,5 +1,5 @@
 ---
-title: Unauthenticated SSRF with Response Disclosure on a Secrets-Retrieval Gateway
+title: SSRF with Response Disclosure on a Secrets-Retrieval Gateway
 date: 2026-08-09
 categories: [Bug Bounty]
 tags: [SSRF, Broken-Authentication, Internal-Network, API-Security]
